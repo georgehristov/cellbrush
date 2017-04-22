@@ -208,6 +208,18 @@ class TBodyWrapper implements TableSectionStructureInterface {
     $this->tbody->addCellClass($rowName, $colName, $class);
     return $this;
   }
+  
+  /**
+   * @param string $rowName
+   * @param string $colName
+   * @param array $attributes
+   *
+   * @return $this
+   */
+  public function addCellAttributes($rowName, $colName, $attributes) {
+  	$this->tbody->addCellAttributes($rowName, $colName, $attributes);
+  	return $this;
+  }
 
   /**
    * @param Axis $columns
